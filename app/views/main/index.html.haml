@@ -2,18 +2,35 @@
   .row#offer
     .container.align-items-center.d-flex#bg-offer
       .row.justify-content-center
-        %h1.display-4.text-center.text-white.w-75
+        .display-1.text-white.mb-4.font-weight-bold.font-oswald
+          Easy Verify
+        %h1.display-4.text-center.text-white.w-75.font-oswald
           Прозрачная и защищенная система верификации образования
           %br
-          = link_to 'Узнать больше', '#more-info', class: 'btn btn-outline-light btn-lg'
-          = link_to 'Проверить сейчас', '#login', class: 'btn btn-outline-light btn-lg'
+          = link_to 'Узнать больше', '#more-info', class: 'btn btn-outline-light btn-lg', data: {turbolinks: false}
+          = link_to 'Проверить сейчас', '#login', class: 'btn btn-outline-light btn-lg', data: {turbolinks: false}
 
 .container
   %h2.mt-4.text-center#more-info
     Уникальная технология защиты от подделок на основе блокчейна
-  .row
-    .col-4
-      %i.fas.fa-badge-check.fa-10x
-    .col-4
+  .row.mt-4.align-items-center.justify-content-between
+    .col-4.text-center
+      %i.fas.fa-check-circle.fa-6x
+      .strong.mt-1.h4
+        Прозрачная и открытая система верификации
+      %em.text-center
+        Бла бла бла
+    .col-4.text-center
+      %i.fas.fa-globe.fa-6x
+      .strong.mt-1.h4
+        Доступна из любой точки мира
+      %em.text-center
+        Бла бла бла
+    .col-4.text-center
+      %i.fas.fa-graduation-cap.fa-6x
+      .strong.mt-1.h4
+        Удобный интерфейс для университетов
+      %em.text-center
+        Бла бла бла
 
 

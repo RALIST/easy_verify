@@ -7,8 +7,11 @@
           %span.navbar-toggler-icon
         .collapse.navbar-collapse.justify-content-end
           %ul.navbar-nav
-            %li.nav-item.mx-2
-              = link_to 'Наши сервисы', '#service', class: 'nav-link'
+            %li.nav-item.mx-2.dropdown
+              = link_to 'Наши сервисы', '#', class: 'nav-link dropdown-toggle', data: {toggle: 'dropdown'}
+              .dropdown-menu
+                = link_to 'Для HR', '#', class: 'dropdown-item'
+                = link_to 'Для университетов и организаций', '#', class: 'dropdown-item'
             %li.nav-item.mx-2
               = link_to 'О нас', '#service', class: 'nav-link'
             %li.nav-item.mx-2

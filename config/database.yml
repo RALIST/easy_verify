@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  database: development_balloons
+  pool: 5
+  username: postgres
+  password: 123
+
+development:
+  <<: *default
+  database: db/diplom_dev
+
+test:
+  <<: *default
+  database: db/diplom_test
+
+production:
+  <<: *default
+  database: db/diplom_production

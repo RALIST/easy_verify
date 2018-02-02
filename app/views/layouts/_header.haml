@@ -1,0 +1,17 @@
+.container-fluid
+  .row
+    .container
+      %nav.navbar.navbar-expand-lg
+        = link_to 'Easy Verify', root_path, class: 'navbar-brand'
+        %button.navbar-toggler{data: {toggle: 'collapse', target: '#headerNav'}}
+          %span.navbar-toggler-icon
+        .collapse.navbar-collapse.justify-content-end
+          %ul.navbar-nav
+            %li.nav-item.mx-2
+              = link_to 'Наши сервисы', '#service', class: 'nav-link'
+            %li.nav-item.mx-2
+              = link_to 'О нас', '#service', class: 'nav-link'
+            %li.nav-item.mx-2
+              = link_to 'Войти', '#service', class: 'nav-link'
+            %li.nav-item.mx-2
+              = link_to 'Регистрация', '#service', class: 'nav-link btn btn-outline-primary'

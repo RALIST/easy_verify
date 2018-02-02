@@ -1,3 +1,13 @@
 .container-fluid
-  %h1.text-center
-    Система верификации подлинности дипломов для образования на основе блокчейна
+  .row#offer
+    .container.align-items-center.d-flex#bg-offer
+      .row.justify-content-center
+        %h1.display-4.text-center.text-white.w-75
+          Прозрачная и защищенная система верификации образования
+          %br
+          = link_to 'Узнать больше', '#more-info', class: 'btn btn-outline-light btn-lg'
+          = link_to 'Проверить сейчас', '#login', class: 'btn btn-outline-light btn-lg'
+
+.container-fluid
+  %h2.mt-4.text-center#more-info
+    Уникальная технология защиты от подделок на основе блокчейн технологий

@@ -1,3 +1,11 @@
-// Place all the styles related to the main controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#offer {
+  min-height: 100vh;
+  background: url('offer.jpg') center no-repeat;
+  background-size: cover;
+}
+
+#bg-offer {
+  min-width: 100%;
+  min-height: 100vh;
+  background-color:rgba(0, 0, 0, 0.7);
+}

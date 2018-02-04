@@ -16,28 +16,34 @@
 .container#more-info.pt-5.align-items-center
 	%h2.my-5.text-center.text-uppercase.font-weight-bold.text-info
 		Первая блокчейн платформа для проверки образования
-	.row.mt-5.pt-5
-		.col-6
-			.h3.text-center
-				Для HR-отделов и агентств
-			%hr
-			.lead.font-oswald.pl-2.text-center
-				Нанимайте квалифицированный персонал
-			%p.pl-2.text-justify
-				По оценкам экспертов, до 25 процентов специалистов при приеме на работу предъявляют поддельные документы об образовании. Квалификация сотрудника критически важна в таких сферах как медицина, финансы, государственное управление. Мы предоставляем достоверные и актуальные данные о кандидате в кратчайшие сроки с сохранением конфиденциальности.
-		.col-6
-			.h3.text-center
-				Для учебных заведений
-			%hr
-			.lead.font-oswald.pl-2.text-center
-				Повышайте доверие и репутацию
-			%p.pl-2.text-justify
-				Ваши дипломы и сертификаты больше нельзя будет подделать. Никто не сможет заявить, что является вашим выпускником и испортить репутацию качественного образования. Вся информация храниться в защищенном виде в блокчейн-сети Etherium, ее невозможно взломать, подделать или удалить.
-	.row
-		.col-6.text-center
-			= link_to 'Узнать больше', employers_path, class: 'btn btn-outline-info btn-sm'
-		.col-6.text-center
-			= link_to 'Узнать больше', univs_path, class: 'btn btn-outline-info btn-sm'
+	.card-deck.pt-5
+		.card
+			.card-header.bg-info.text-white
+				.h3.text-center
+					Для HR-отделов и агентств
+			.card-body
+
+				.lead.font-oswald.text-center
+					Нанимайте квалифицированный персонал
+				%p.text-justify
+					По оценкам экспертов, до 25 процентов специалистов при приеме на работу предъявляют поддельные документы об образовании. Квалификация сотрудника критически важна в таких сферах как медицина, финансы, государственное управление. Мы предоставляем достоверные и актуальные данные о кандидате в кратчайшие сроки с сохранением конфиденциальности.
+			.card-footer
+				= link_to employers_path, class: 'btn btn-outline-info btn-sm btn-block' do
+					Узнать больше
+					%i.fas.fa-share
+		.card
+			.card-header.bg-info.text-white
+				.h3.text-center
+					Для учебных заведений
+			.card-body
+				.lead.font-oswald.pl-2.text-center
+					Повышайте доверие и репутацию
+				%p.pl-2.text-justify
+					Ваши дипломы и сертификаты больше нельзя будет подделать. Никто не сможет заявить, что является вашим выпускником и испортить репутацию качественного образования. Вся информация храниться в защищенном виде в блокчейн-сети Etherium, ее невозможно взломать, подделать или удалить.
+			.card-footer
+				= link_to univs_path, class: 'btn btn-outline-info btn-sm btn-block' do
+					Узнать больше
+					%i.fas.fa-share
 	.row.mt-5.pt-5
 		.col-12.text-center
 			= link_to 'Зарегистрироваться', '#', class: 'btn btn-info btn-lg'
@@ -83,7 +89,7 @@
 			.row
 				.col-12.text-center.my-5
 					= link_to 'Регистрация', '#', class: 'btn btn-outline-light btn-lg mx-5'
-					= link_to 'Узнать больше', '#', class: 'btn btn-outline-light btn-lg mx-5'
+					= link_to 'Узнать больше', faq_path, class: 'btn btn-outline-light btn-lg mx-5'
 
 
 

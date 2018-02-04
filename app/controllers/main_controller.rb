@@ -11,4 +11,10 @@ class MainController < ApplicationController
 
   def univs
   end
+
+  def ico
+  end
+
+  def faq
+  end
 end

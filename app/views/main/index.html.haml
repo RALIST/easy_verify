@@ -1,89 +1,89 @@
 .container-fluid
-  .row#offer
-    .container.align-items-center.d-flex#bg-offer
-      .row.justify-content-center
-        .display-1.mb-4.font-weight-bold.font-oswald.text-info.text-center
-          Easy Verify
-        %h1.display-4.text-center.text-white.w-75.font-oswald
-          Прозрачная и защищенная система проверки квалификации сотрудника
-        .text-center.text-white.my-3.h4
-          / Достоверная и надежная база дипломов и других документов об образовании
-        %br
-        .text-center
-          = link_to 'Узнать больше', '#more-info', class: 'btn btn-outline-light btn-lg', data: {turbolinks: false}
-          = link_to 'Проверить сейчас', '#login', class: 'btn btn-outline-light btn-lg', data: {turbolinks: false}
+	.row#offer
+		.container.align-items-center.d-flex#bg-offer
+			.row.justify-content-center
+				.display-1.mb-4.font-weight-bold.font-oswald.text-info.text-center
+					Easy Verify
+				%h1.display-4.text-center.text-white.w-75.font-oswald
+					Прозрачная и защищенная система проверки квалификации сотрудника
+				.text-center.text-white.my-3.h4
+					/ Достоверная и надежная база дипломов и других документов об образовании
+				%br
+				.text-center
+					= link_to 'Узнать больше', '#more-info', class: 'btn btn-outline-light btn-lg', data: {turbolinks: false}
+					= link_to 'Проверить сейчас', '#login', class: 'btn btn-outline-light btn-lg', data: {turbolinks: false}
 
 .container#more-info.pt-5.align-items-center
-  %h2.my-5.text-center.text-uppercase.font-weight-bold.text-info
-    Первая блокчейн платформа для проверки образования
-  .row.mt-5.pt-5
-    .col-6
-      .h3.text-center
-        Для HR-отделов и агентств
-      %hr
-      .lead.font-oswald.pl-2.text-center
-        Нанимайте квалифицированный персонал
-      %p.pl-2.text-justify
-        По оценкам экспертов, до 25 процентов специалистов при приеме на работу предъявляют поддельные документы об образовании. Квалификация сотрудника критически важна в таких сферах как медицина, финансы, государственное управление. Мы предоставляем достоверные и актуальные данные о кандидате в кратчайшие сроки с сохранением конфиденциальности.
-    .col-6
-      .h3.text-center
-        Для учебных заведений
-      %hr
-      .lead.font-oswald.pl-2.text-center
-        Повышайте доверие и репутацию
-      %p.pl-2.text-justify
-        Ваши дипломы и сертификаты больше нельзя будет подделать. Никто не сможет заявить, что является вашим выпускником и испортить репутацию качественного образования. Вся информация храниться в защищенном виде в блокчейн-сети Etherium, ее невозможно взломать, подделать или удалить.
-  .row
-    .col-6.text-center
-      = link_to 'Узнать больше', univs_path, class: 'btn btn-outline-info btn-sm'
-    .col-6.text-center
-      = link_to 'Узнать больше', employers_path, class: 'btn btn-outline-info btn-sm'
-  .row.mt-5.pt-5
-    .col-12.text-center
-      = link_to 'Зарегистрироваться', '#', class: 'btn btn-info btn-lg'
+	%h2.my-5.text-center.text-uppercase.font-weight-bold.text-info
+		Первая блокчейн платформа для проверки образования
+	.row.mt-5.pt-5
+		.col-6
+			.h3.text-center
+				Для HR-отделов и агентств
+			%hr
+			.lead.font-oswald.pl-2.text-center
+				Нанимайте квалифицированный персонал
+			%p.pl-2.text-justify
+				По оценкам экспертов, до 25 процентов специалистов при приеме на работу предъявляют поддельные документы об образовании. Квалификация сотрудника критически важна в таких сферах как медицина, финансы, государственное управление. Мы предоставляем достоверные и актуальные данные о кандидате в кратчайшие сроки с сохранением конфиденциальности.
+		.col-6
+			.h3.text-center
+				Для учебных заведений
+			%hr
+			.lead.font-oswald.pl-2.text-center
+				Повышайте доверие и репутацию
+			%p.pl-2.text-justify
+				Ваши дипломы и сертификаты больше нельзя будет подделать. Никто не сможет заявить, что является вашим выпускником и испортить репутацию качественного образования. Вся информация храниться в защищенном виде в блокчейн-сети Etherium, ее невозможно взломать, подделать или удалить.
+	.row
+		.col-6.text-center
+			= link_to 'Узнать больше', employers_path, class: 'btn btn-outline-info btn-sm'
+		.col-6.text-center
+			= link_to 'Узнать больше', univs_path, class: 'btn btn-outline-info btn-sm'
+	.row.mt-5.pt-5
+		.col-12.text-center
+			= link_to 'Зарегистрироваться', '#', class: 'btn btn-info btn-lg'
 
 .container-fluid#how-it-works
-  .row#offer
-    .container.align-items-center#bg-offer
-      .col-12
-        %h2.my-5.text-center.text-uppercase.font-weight-bold.text-info.w-100
-          Как это работает
-      .row.mt-5
-        .col-4
-          .h3.font-oswald.text-center.text-white
-            .fa-2x.text-info
-              %span.fa-layers.fa-fw
-                %i.fas.fa-circle
-                %span.fa-layers-text.fa-inverse.fa-xs
-                  1
-            Создайте аккаунт
-          %p.text-center.text-white
-            Зарегистрируйтесь в системе и пройдите процедуру верификации.
-        .col-4
-          .h3.font-oswald.text-center.text-white
-            .fa-2x.text-info
-              %span.fa-layers.fa-fw
-                %i.fas.fa-circle
-                %span.fa-layers-text.fa-inverse.fa-xs
-                  2
-            Пополните счет
-          %p.text-center.text-white
-            Все услуги предоставляются за специальные токены - EDC (Education Coins).
-            Пополнить счет вы сможете в личном кабинете.
-        .col-4
-          .h3.font-oswald.text-center.text-white
-            .fa-2x.text-info
-              %span.fa-layers.fa-fw
-                %i.fas.fa-circle
-                %span.fa-layers-text.fa-inverse.fa-xs
-                  3
-            Отправьте запрос
-          %p.text-center.text-white
-            Заполните необходимую информацию и отправьте в систему. Если мы что-то найдем - сразу же вас оповестим.
-      .row
-        .col-12.text-center.my-5
-          = link_to 'Регистрация', '#', class: 'btn btn-outline-light btn-lg mx-5'
-          = link_to 'Узнать больше', '#', class: 'btn btn-outline-light btn-lg mx-5'
+	.row#offer
+		.container.align-items-center#bg-offer
+			.col-12
+				%h2.my-5.text-center.text-uppercase.font-weight-bold.text-info.w-100
+					Как это работает
+			.row.mt-5
+				.col-4
+					.h3.font-oswald.text-center.text-white
+						.fa-2x.text-info
+							%span.fa-layers.fa-fw
+								%i.fas.fa-circle
+								%span.fa-layers-text.fa-inverse.fa-xs
+									1
+						Создайте аккаунт
+					%p.text-center.text-white
+						Зарегистрируйтесь в системе и пройдите процедуру верификации.
+				.col-4
+					.h3.font-oswald.text-center.text-white
+						.fa-2x.text-info
+							%span.fa-layers.fa-fw
+								%i.fas.fa-circle
+								%span.fa-layers-text.fa-inverse.fa-xs
+									2
+						Пополните счет
+					%p.text-center.text-white
+						Все услуги предоставляются за специальные токены - EDC (Education Coins).
+						Пополнить счет вы сможете в личном кабинете.
+				.col-4
+					.h3.font-oswald.text-center.text-white
+						.fa-2x.text-info
+							%span.fa-layers.fa-fw
+								%i.fas.fa-circle
+								%span.fa-layers-text.fa-inverse.fa-xs
+									3
+						Отправьте запрос
+					%p.text-center.text-white
+						Заполните необходимую информацию и отправьте в систему. Если мы что-то найдем - сразу же вас оповестим.
+			.row
+				.col-12.text-center.my-5
+					= link_to 'Регистрация', '#', class: 'btn btn-outline-light btn-lg mx-5'
+					= link_to 'Узнать больше', '#', class: 'btn btn-outline-light btn-lg mx-5'
 
 
 

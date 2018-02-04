@@ -1,11 +1,6 @@
 #offer {
   background: image-url('offer.jpg') center no-repeat;
   background-size: cover;
-  @include media-breakpoint-down(lg){
-    .btn {
-      margin-top: 1rem;
-    }
-  }
 }
 
 #bg-offer {
@@ -14,17 +9,6 @@
   background-color:rgba(0, 0, 0, 0.7);
 }
 
-#about {
-  @include make-col-ready();
-  @include make-col(6);
-  @include media-breakpoint-down(lg) {
-    @include make-col-ready();
-    @include make-col(12);
-    .h3{
-      font-size: 1.5rem;
-    }
-  }
-}
 
 .font-oswald {
   font-family: 'Oswald', sans-serif;
@@ -56,6 +40,9 @@
 }
 
 @include media-breakpoint-down(lg){
+  .btn {
+    margin-bottom: 1rem;
+  }
   .display-1 {
       font-size: 3rem !important;
     }
@@ -69,10 +56,6 @@
   }
   .h3, .lead {
     font-size: 1rem;
-  }
-
-  p {
-    font-size: 0.75rem;
   }
 }
 

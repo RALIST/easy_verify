@@ -7,39 +7,28 @@
         %h1.display-4.text-center.text-white.w-75.font-oswald
           Прозрачная и защищенная система проверки квалификации сотрудника
         .text-center.text-white.my-3.h4
-          Достоверная и надежная база дипломов и других документов об образовании
+          / Достоверная и надежная база дипломов и других документов об образовании
         %br
         .text-center
           = link_to 'Узнать больше', '#more-info', class: 'btn btn-outline-light btn-lg', data: {turbolinks: false}
           = link_to 'Проверить сейчас', '#login', class: 'btn btn-outline-light btn-lg', data: {turbolinks: false}
 
-.container#more-info.pt-5
-  %h2.my-5.text-center.text-uppercase.font-weight-bold
-    Преимущества
-  .row.mt-4.justify-content-between
-    .col-4.text-center.text-info
-      %i.fas.fa-check-circle.fa-6x
-      .strong.mt-4.h4
-        Достоверность информации
-      .text-center.text-primary
-        Наша система проверки основана на блокчейн технологии, а значит данные в реестре невозможно подделать, изменить или удалить.
-    .col-4.text-center.text-info
-      %i.fas.fa-globe.fa-6x
-      .strong.mt-4.h4
-        Доступ 24/7
-      .text-center.text-primary
-        Из любой точки мира и в любое время суток. Настолько быстро, насколько это вообще возможно.
-    .col-4.text-center.text-info
-      %i.fas.fa-graduation-cap.fa-6x
-      .strong.mt-4.h4
-        Верификация университетов
-      .text-center.text-primary
-        Мы проверяем каждое учебное заведение, прежде чем добавить его в базу.
+.container#more-info.pt-2
+  %h2.my-5.text-center.text-uppercase.font-weight-bold.text-info
+    Первая блокчейн платформа для проверки документов об образовании
   .row
-    %blockquote.blockquote.col-12.mt-4.border-left
-      %em.h3
-        По оценкам экспертов, до 25 процентов специалистов при приеме на работу предъявляют поддельные документы о высшем образовании.
-      .blockquote-footer
-        кто-то
+    .col-6
+      .lead.font-oswald.mb-3
+        %i.fas.fa-graduation-cap.mr-2
+        Проверка квалификации - первый шаг при найме сотрудника
+      .border-left.pl-2
+        По оценкам экспертов, до 25 процентов специалистов при приеме на работу предъявляют поддельные документы об образовании. Квалификация сотрудника критически важна в таких сферах как медицина, финансы, государственное управление.
+      .lead.font-oswald
+
+
+    .col-6
+      = image_tag 'job.jpg', class: 'img-fluid'
+
+
 
 

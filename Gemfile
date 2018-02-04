@@ -34,6 +34,8 @@ gem 'popper_js'
 gem 'sitemap_generator'
 gem 'haml-rails'
 gem 'pg', '~> 0.21'
+
 group :production do
   gem 'rails_12factor'
+  gem 'heroku-deflater'
 end

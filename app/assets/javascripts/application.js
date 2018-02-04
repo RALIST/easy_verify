@@ -17,3 +17,8 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require_tree .
+
+
+$(document).on('turbolinks:load', function(){
+  FontAwesome.dom.i2svg();
+})

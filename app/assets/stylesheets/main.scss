@@ -1,5 +1,5 @@
 #offer {
-  background: url('offer.jpg') center no-repeat;
+  background: image-url('offer.jpg') center no-repeat;
   background-size: cover;
   @include media-breakpoint-down(lg){
     .btn {
@@ -24,7 +24,7 @@
 
 #how-it-works {
   #offer {
-    background: url('job.jpg') center no-repeat;
+    background: image-url('job.jpg') center no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }

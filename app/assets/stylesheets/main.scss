@@ -2,6 +2,20 @@
   min-height: 80vh;
   background: url('offer.jpg') center no-repeat;
   background-size: cover;
+  @include media-breakpoint-down(lg){
+    .display-1 {
+      font-size: 3rem !important;
+    }
+
+    .display-4 {
+      font-size: 2rem !important;
+      width: 100% !important;
+    }
+
+    .btn {
+      margin-top: 1rem;
+    }
+  }
 }
 
 #bg-offer {

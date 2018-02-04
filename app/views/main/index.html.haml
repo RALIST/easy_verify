@@ -2,7 +2,7 @@
   .row#offer
     .container.align-items-center.d-flex#bg-offer
       .row.justify-content-center
-        .display-1.mb-4.font-weight-bold.font-oswald.text-info
+        .display-1.mb-4.font-weight-bold.font-oswald.text-info.text-center
           Easy Verify
         %h1.display-4.text-center.text-white.w-75.font-oswald
           Прозрачная и защищенная система проверки квалификации сотрудника
@@ -15,19 +15,24 @@
 
 .container#more-info.pt-2
   %h2.my-5.text-center.text-uppercase.font-weight-bold.text-info
-    Первая блокчейн платформа для проверки документов об образовании
+    Первая блокчейн платформа для проверки образования
   .row
     .col-6
-      .lead.font-oswald.mb-3
-        %i.fas.fa-graduation-cap.mr-2
-        Проверка квалификации - первый шаг при найме сотрудника
-      .border-left.pl-2
+      .h3.text-center
+        Для HR-отделов и агентств
+      %hr
+      .lead.font-oswald.pl-2
+        Нанимайте квалифицированный персонал
+      %p.pl-2
         По оценкам экспертов, до 25 процентов специалистов при приеме на работу предъявляют поддельные документы об образовании. Квалификация сотрудника критически важна в таких сферах как медицина, финансы, государственное управление.
-      .lead.font-oswald
-
-
     .col-6
-      = image_tag 'job.jpg', class: 'img-fluid'
+      .h3.text-center
+        Для учебных заведений
+      %hr
+      .lead.font-oswald.pl-2
+        Повышайте доверие и репутацию
+      %p.pl-2
+        Ваши дипломы и сертификаты больше нельзя будет подделать. Никто не сможет заявить, что является вашим выпускником и испортить репутацию качественного образования.
 
 
 

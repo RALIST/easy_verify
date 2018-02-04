@@ -4,8 +4,8 @@
       %nav.navbar.navbar-expand-lg
         = link_to 'Easy Verify', root_path, class: 'navbar-brand text-white'
         %button.navbar-toggler{data: {toggle: 'collapse', target: '#headerNav'}}
-          %span.navbar-toggler-icon
-        .collapse.navbar-collapse.justify-content-end
+          %i.fas.fa-bars.text-white
+        .collapse.navbar-collapse.justify-content-end#headerNav
           %ul.navbar-nav.text-white
             %li.nav-item.mx-2.dropdown
               = link_to 'Наши сервисы', '#', class: 'nav-link dropdown-toggle text-white', data: {toggle: 'dropdown'}

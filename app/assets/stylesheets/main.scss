@@ -1,5 +1,4 @@
 #offer {
-  min-height: 80vh;
   background: url('offer.jpg') center no-repeat;
   background-size: cover;
   @include media-breakpoint-down(lg){
@@ -20,7 +19,15 @@
 }
 
 #more-info, #how-it-works{
-  min-height: 90vh;
+  min-height: 100vh;
+}
+
+#how-it-works {
+  #offer {
+    background: url('job.jpg') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
 
 .border-left {

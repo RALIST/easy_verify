@@ -42,37 +42,48 @@
     .col-12.text-center
       = link_to 'Зарегистрироваться', '#', class: 'btn btn-info btn-lg'
 
-.container#how-it-works
-  %h2.my-5.text-center.text-uppercase.font-weight-bold.text-info
-    Как это работает
-  .row
-    .col-4
-      .h3.font-oswald.text-center
-        .fa-2x.text-info
-          %span.fa-layers.fa-fw
-            %i.fas.fa-circle
-            %span.fa-layers-text.fa-inverse.fa-xs
-              1
-        Создайте аккаунт
-    .col-4
-      .h3.font-oswald.text-center
-        .fa-2x.text-info
-          %span.fa-layers.fa-fw
-            %i.fas.fa-circle
-            %span.fa-layers-text.fa-inverse.fa-xs
-              2
-        Пополните счет
-
-    .col-4
-      .h3.font-oswald.text-center
-        .fa-2x.text-info
-          %span.fa-layers.fa-fw
-            %i.fas.fa-circle
-            %span.fa-layers-text.fa-inverse.fa-xs
-              3
-        Отправьте запрос
-
-
+.container-fluid#how-it-works
+  .row#offer
+    .container.align-items-center#bg-offer
+      .col-12
+        %h2.my-5.text-center.text-uppercase.font-weight-bold.text-info.w-100
+          Как это работает
+      .row.mt-5
+        .col-4
+          .h3.font-oswald.text-center.text-white
+            .fa-2x.text-info
+              %span.fa-layers.fa-fw
+                %i.fas.fa-circle
+                %span.fa-layers-text.fa-inverse.fa-xs
+                  1
+            Создайте аккаунт
+          %p.text-center.text-white
+            Зарегистрируйтесь в системе и пройдите процедуру верификации.
+        .col-4
+          .h3.font-oswald.text-center.text-white
+            .fa-2x.text-info
+              %span.fa-layers.fa-fw
+                %i.fas.fa-circle
+                %span.fa-layers-text.fa-inverse.fa-xs
+                  2
+            Пополните счет
+          %p.text-center.text-white
+            Все услуги предоставляются за специальные токены - EDC (Education Coins).
+            Пополнить счет вы сможете в личном кабинете.
+        .col-4
+          .h3.font-oswald.text-center.text-white
+            .fa-2x.text-info
+              %span.fa-layers.fa-fw
+                %i.fas.fa-circle
+                %span.fa-layers-text.fa-inverse.fa-xs
+                  3
+            Отправьте запрос
+          %p.text-center.text-white
+            Заполните необходимую информацию и отправьте в систему. Если мы что-то найдем - сразу же вас оповестим.
+      .row
+        .col-12.text-center
+          = link_to 'Регистрация', '#', class: 'btn btn-outline-light btn-lg'
+          = link_to 'Узнать больше', '#', class: 'btn btn-outline-light btn-lg'
 
 
 

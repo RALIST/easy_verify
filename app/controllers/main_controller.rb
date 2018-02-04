@@ -5,4 +5,10 @@ class MainController < ApplicationController
 
   def about
   end
+
+  def employers
+  end
+
+  def univs
+  end
 end

@@ -13,35 +13,66 @@
           = link_to 'Узнать больше', '#more-info', class: 'btn btn-outline-light btn-lg', data: {turbolinks: false}
           = link_to 'Проверить сейчас', '#login', class: 'btn btn-outline-light btn-lg', data: {turbolinks: false}
 
-.container#more-info.pt-2
+.container#more-info.pt-5.align-items-center
   %h2.my-5.text-center.text-uppercase.font-weight-bold.text-info
     Первая блокчейн платформа для проверки образования
-  .row
+  .row.mt-5.pt-5
     .col-6
       .h3.text-center
         Для HR-отделов и агентств
       %hr
-      .lead.font-oswald.pl-2
+      .lead.font-oswald.pl-2.text-center
         Нанимайте квалифицированный персонал
-      %p.pl-2
+      %p.pl-2.text-justify
         По оценкам экспертов, до 25 процентов специалистов при приеме на работу предъявляют поддельные документы об образовании. Квалификация сотрудника критически важна в таких сферах как медицина, финансы, государственное управление. Мы предоставляем достоверные и актуальные данные о кандидате в кратчайшие сроки с сохранением конфиденциальности.
-
     .col-6
       .h3.text-center
         Для учебных заведений
       %hr
-      .lead.font-oswald.pl-2
+      .lead.font-oswald.pl-2.text-center
         Повышайте доверие и репутацию
-      %p.pl-2
+      %p.pl-2.text-justify
         Ваши дипломы и сертификаты больше нельзя будет подделать. Никто не сможет заявить, что является вашим выпускником и испортить репутацию качественного образования. Вся информация храниться в защищенном виде в блокчейн-сети Etherium, ее невозможно взломать, подделать или удалить.
   .row
     .col-6.text-center
       = link_to 'Узнать больше', univs_path, class: 'btn btn-outline-info btn-sm'
     .col-6.text-center
       = link_to 'Узнать больше', employers_path, class: 'btn btn-outline-info btn-sm'
-  .row.mt-5
+  .row.mt-5.pt-5
     .col-12.text-center
       = link_to 'Зарегистрироваться', '#', class: 'btn btn-info btn-lg'
+
+.container#how-it-works
+  %h2.my-5.text-center.text-uppercase.font-weight-bold.text-info
+    Как это работает
+  .row
+    .col-4
+      .h3.font-oswald.text-center
+        .fa-2x.text-info
+          %span.fa-layers.fa-fw
+            %i.fas.fa-circle
+            %span.fa-layers-text.fa-inverse.fa-xs
+              1
+        Создайте аккаунт
+    .col-4
+      .h3.font-oswald.text-center
+        .fa-2x.text-info
+          %span.fa-layers.fa-fw
+            %i.fas.fa-circle
+            %span.fa-layers-text.fa-inverse.fa-xs
+              2
+        Пополните счет
+
+    .col-4
+      .h3.font-oswald.text-center
+        .fa-2x.text-info
+          %span.fa-layers.fa-fw
+            %i.fas.fa-circle
+            %span.fa-layers-text.fa-inverse.fa-xs
+              3
+        Отправьте запрос
+
+
 
 
 

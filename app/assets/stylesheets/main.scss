@@ -1,6 +1,12 @@
 #offer {
   background: image-url('offer.jpg') center no-repeat;
   background-size: cover;
+  @include media-breakpoint-up(md){
+    .btn {
+      margin: 1rem 1rem;
+    }
+
+  }
 }
 
 #bg-offer {

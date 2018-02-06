@@ -8,15 +8,20 @@
         .collapse.navbar-collapse.justify-content-end#headerNav
           %ul.navbar-nav.text-white
             %li.nav-item.mx-2.dropdown
-              = link_to 'Наши сервисы', '#', class: 'nav-link dropdown-toggle text-white', data: {toggle: 'dropdown'}
+              = link_to t('header.our_services'), '#', class: 'nav-link dropdown-toggle text-white', data: {toggle: 'dropdown'}
               .dropdown-menu
-                = link_to 'Для HR', employers_path, class: 'dropdown-item '
-                = link_to 'Для учебных заведений', univs_path, class: 'dropdown-item'
+                = link_to t('header.for_hr'), employers_path, class: 'dropdown-item '
+                = link_to t('header.for_univs'), univs_path, class: 'dropdown-item'
             %li.nav-item.mx-2
-              = link_to 'О нас', about_path, class: 'nav-link text-white'
+              = link_to t('header.about_us'), about_path, class: 'nav-link text-white'
             %li.nav-item.mx-2
               = link_to 'ICO', ico_path, class: 'nav-link text-white'
             %li.nav-item.mx-2
-              = link_to 'Войти', '#service', class: 'nav-link text-white'
+              = link_to t('header.login'), '#service', class: 'nav-link text-white'
             %li.nav-item.mx-2
-              = link_to 'Регистрация', '#service', class: 'nav-link btn btn-danger'
+              = link_to t('header.signin'), '#service', class: 'nav-link btn btn-danger'
+            %li.nav-item.mx-2.dropdown
+              = link_to I18n.locale.capitalize, '#', class: 'nav-link dropdown-toggle text-white', data: {toggle: 'dropdown'}
+              .dropdown-menu.dropdown-menu-right
+                - I18n.available_locales.each do |l|
+                  = link_to l.capitalize,"/#{l}", class: 'dropdown-item'

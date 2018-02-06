@@ -3,23 +3,23 @@
     .row
       #info
         .h3.mb-3.font-oswald
-          Информация
+          = t("footer.info")
         %ul.nav.justify-content-center.flex-column
           %li
-            = link_to 'О компании', about_path, class: 'text-white text-uppercase'
+            = link_to t('footer.about'), about_path, class: 'text-white text-uppercase'
           %li
-            = link_to 'Условия и положения', '#', class: 'text-white text-uppercase'
+            = link_to t('footer.terms'), '#', class: 'text-white text-uppercase'
           %li
-            = link_to 'Политика конфиденциальности', '#', class: 'text-white text-uppercase'
-        = link_to 'Свяжитесь с нами!', '#', class: 'btn btn-danger text-uppercase'
+            = link_to t('footer.privacy'), '#', class: 'text-white text-uppercase'
+        = link_to t('footer.contact'), '#', class: 'btn btn-danger text-uppercase'
       #links
         .h3.mb-3.font-oswald
-          Ссылки
+          = t('footer.links')
         %ul.nav.justify-content-center.flex-column
           %li
-            = link_to 'Для HR', employers_path, class: 'text-white text-uppercase'
+            = link_to t('header.for_hr'), employers_path, class: 'text-white text-uppercase'
           %li
-            = link_to 'Для учебных заведений', univs_path, class: 'text-white text-uppercase'
+            = link_to t('header.for_univs'), univs_path, class: 'text-white text-uppercase'
           %li
             = link_to 'FAQ', faq_path, class: 'text-white text-uppercase'
           %li
@@ -27,7 +27,7 @@
           %li
       #contact
         .h3.mb-3.font-oswald
-          Контакты
+          = t('footer.contacts')
         #social
           = link_to '', class: 'text-white' do
             %i.fab.fa-facebook.fa-2x.mr-2

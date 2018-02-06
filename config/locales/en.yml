@@ -1,23 +1,37 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  main_offer: "Blockchain-based system for education verifications"
+  offer_2: "The first blockchain platform for qualification check"
+  header:
+    our_services: "Our services"
+    about_us: "About Us"
+    login:  "Log In"
+    signin: "Sign In"
+    for_hr: "For HRs"
+    for_univs: "For educational organization"
+  main_btn:
+    more: "Learn more"
+    check: "Check it now!"
+  screen_2:
+    offer1: "For HRs and agencies"
+    offer2: "For universities"
+    head1: "Hire qualified personnel"
+    head2: "Increase trust and reputation"
+    text1: "According to experts, estimates, up to 25 percent of specialists applying for a job are presented with forged documents on education. Qualification of the employee is critical in such areas as medicine, finance, public administration. We provide reliable and up-to-date information about the candidate in the shortest possible time with the preservation of confidentiality."
+    text2: "Your diplomas and certificates can no longer be faked. Nobody can say that it is your graduate and spoil the reputation of a quality education. All information is stored in a secure form in the Etherium blockchain-network, it can not be hacked, forged or deleted."
+  screen3:
+    offer: "Quick Start"
+    step1: "Create an account"
+    step2: "Buy coins"
+    step3: "Check diplomas"
+    text1: "Sign In and verify your account"
+    text2: "Buy special coins for verifications - EDC"
+    text3: "Fill in the details and sumbit the request"
+  footer:
+    info: "Information"
+    links: "Links"
+    contacts: "Contacts"
+    about: "About company"
+    terms: "Terms and conditions"
+    privacy: "Privacy policy"
+    contact: "Contact Us"
+

@@ -8,6 +8,5 @@ Bundler.require(*Rails.groups)
 
 module Diplom
   class Application < Rails::Application
-
   end
 end

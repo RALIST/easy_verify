@@ -97,3 +97,33 @@
     border: 0;
   }
 }
+
+#sidebar {
+  min-height: 100vh;
+  z-index: 1000;
+}
+
+#dasboard{
+  min-height: 100vh;
+}
+
+.wrap {
+  position: relative;
+
+}
+
+.panel {
+  position: fixed;
+  left: -15.625em; /*or width of your navigation panel*/
+  width: 15.625em; /*should match the above value*/
+}
+
+.push {
+  position: relative;
+}
+
+#toggler {
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border-radius: 0 1rem 1rem 0;
+}

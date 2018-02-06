@@ -40,3 +40,8 @@ en:
   devise:
     forgot_password: 'Forgot your password?'
     reset: 'Reset password'
+  layouts:
+    application:
+      header:
+        login:  "Sign In "
+        signup: "Sign Up"

@@ -21,4 +21,12 @@
 
 $(document).on('turbolinks:load', function(){
   FontAwesome.dom.i2svg();
-})
+  $('#toggler').bigSlide({
+    menu: '#leftbar',
+    easyClose: true,
+    push: '.push',
+    menuWidth: '18em'
+  });
+});
+
+

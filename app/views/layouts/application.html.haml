@@ -7,6 +7,8 @@
 		= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
 		= javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 		= javascript_include_tag 'https://use.fontawesome.com/releases/v5.0.6/js/all.js'
+		= javascript_include_tag	'big-slide.js'
+
 		%meta{name: "viewport", content: "width=device-width, initial-scale=1"}
 	%body
 		#wrapper
@@ -25,7 +27,8 @@
 						.display-4.font-oswald
 							In development
 						.h3
-							It's just a example application based on blockchain data.
+							To get example data #{link_to t(".header.login"), sign_in_path}
+							or #{link_to t(".header.signup"), sign_up_path}
 						.lead.my-5
 							We are hard working to make dream closer, if you want to track our progress join us in social media.
 						#social

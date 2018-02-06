@@ -1,5 +1,8 @@
 en:
+  meta_tags:
+    keywords: 'how to check if a degree is real, validate education, background check'
   main_offer: "Blockchain-based system for education verifications"
+  suboffer: 'Worldwide. Fast. Easy.'
   offer_2: "The first blockchain platform for qualification check"
   header:
     our_services: "Our services"
@@ -12,7 +15,7 @@ en:
     more: "Learn more"
     check: "Check it now!"
   screen_2:
-    offer1: "For HRs and agencies"
+    offer1: "For HRs and employers"
     offer2: "For universities"
     head1: "Hire qualified personnel"
     head2: "Increase trust and reputation"

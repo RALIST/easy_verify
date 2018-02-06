@@ -1,4 +1,6 @@
 ru:
+  meta_tags:
+    keywords: 'проверить диплом, проверить диплом онлайн, проверить сертификат'
   header:
     our_services: "Наши сервисы"
     about_us: "О нас"
@@ -7,6 +9,7 @@ ru:
     for_hr: "Для HR"
     for_univs: "Для учебных заведений"
   main_offer: "Децентрализованная система проверки квалификации сотрудников"
+  suboffer: 'Worldwide. Fast. Easy.'
   main_btn:
     more: "Узнать больше"
     check: "Проверить сейчас"

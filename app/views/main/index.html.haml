@@ -1,17 +1,18 @@
 .container-fluid
 	.row#offer
-		.container.align-items-center.d-flex#bg-offer
+		.container.align-items-center.d-flex#bg-offer.justify-content-center
 			.row.justify-content-center
 				.display-1.mb-4.font-weight-bold.font-oswald.text-info.text-center
 					Easy Verify
 				%h1.display-4.text-center.text-white.w-75.font-oswald
 					= t('main_offer')
-				.text-center.text-white.my-3.h4
-					/ Достоверная и надежная база дипломов и других документов об образовании
 				%br
 				.text-center
 					= link_to t('main_btn.more'), '#more-info', class: 'btn btn-outline-light btn-lg', data: {turbolinks: false}
 					= link_to t('main_btn.check'), '#login', class: 'btn btn-outline-light btn-lg', data: {turbolinks: false}
+				.row.w-100.text-center.text-white
+					%em.h2.w-100
+						= t('suboffer')
 
 .container#more-info.pt-5.align-items-center
 	%h2.my-5.text-center.text-uppercase.font-weight-bold.text-info

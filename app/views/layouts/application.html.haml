@@ -13,3 +13,37 @@
 			= render 'layouts/header'
 			= yield
 		= render 'layouts/footer'
+
+		.modal#modal-alpha.p-0{role: 'dialog'}
+			.modal-dialog.m-0.w-100
+				.modal-content.w-100
+					.modal-header
+						.modal-title
+						%button.close{data: {dismiss: 'modal'}}
+							%i.fas.fa-times
+					.modal-body.text-center
+						.display-4.font-oswald
+							In development
+						.h3
+							It's just a example application based on blockchain data.
+						.lead.my-5
+							We are hard working to make dream closer, if you want to track our progress join us in social media.
+						#social
+							= link_to '', class: 'text-info' do
+								%i.fab.fa-facebook.fa-3x.mx-2
+							= link_to '', class: 'text-info' do
+								%i.fab.fa-vk.fa-3x.mx-2
+							= link_to '', class: 'text-info' do
+								%i.fab.fa-twitter.fa-3x.mx-2
+							= link_to '', class: 'text-info' do
+								%i.fab.fa-telegram-plane.fa-3x.mx-2
+							= link_to '', class: 'text-info' do
+								%i.fab.fa-github.fa-3x.mx-2
+						.lead.my-3
+							or get latest news via mail
+						#form.m-auto
+							.form-group
+								= email_field_tag 'Email','', placeholder: 'Email', class: 'form-control'
+							.form-group
+								= submit_tag 'Subscribe', class: 'btn btn-danger'
+

@@ -33,7 +33,7 @@
                   = link_to 'API', univs_path, class: 'dropdown-item'
                   = link_to 'Sign Out', sign_out_path, class: 'dropdown-item', method: :delete
               %li.nav-item.mx-2
-                = link_to 'Send request', '#', class: 'nav-link btn btn-danger'
+                = link_to 'Send request', '#', class: 'nav-link btn btn-danger', data: {toggle: 'modal', target: '#modal-alpha'}
             %li.nav-item.mx-2.dropdown
               = link_to I18n.locale.capitalize, '#', class: 'nav-link dropdown-toggle text-white', data: {toggle: 'dropdown'}
               .dropdown-menu.dropdown-menu-right

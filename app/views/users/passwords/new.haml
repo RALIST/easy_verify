@@ -1,0 +1,16 @@
+%h2.mt-5.text-center Forgot your password?
+%hr.my-5.border-top.border-danger.col-3
+.container
+  .row.justify-content-center
+    #form.bg-light.border-info.border
+      = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+        = devise_error_messages!
+
+        .form-group.mt-5
+          = f.label :email
+          = f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control'
+
+        .form-group
+          = f.submit "Send me reset password instructions", class: 'btn btn-info btn-block btn-lg'
+      .text-center.my-3
+        = render "users/shared/links"

@@ -35,6 +35,8 @@ gem 'sitemap_generator'
 gem 'haml-rails'
 gem 'pg', '~> 0.21'
 gem 'meta-tags'
+gem 'devise'
+gem 'devise-i18n'
 
 group :production do
   gem 'rails_12factor'

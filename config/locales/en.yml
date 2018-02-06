@@ -7,8 +7,8 @@ en:
   header:
     our_services: "Our services"
     about_us: "About Us"
-    login:  "Log In"
-    signin: "Sign In"
+    login:  "Sign In "
+    signup: "Sign Up"
     for_hr: "For HRs"
     for_univs: "For educational organization"
   main_btn:

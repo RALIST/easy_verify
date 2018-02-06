@@ -1,0 +1,10 @@
+#form {
+  @include make-col-ready();
+  @include make-col(6);
+  @include media-breakpoint-down(lg){
+    @include make-col-ready();
+    @include make-col(10);
+  }
+  margin-bottom: 5rem;
+}
+

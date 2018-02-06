@@ -1,4 +1,4 @@
-%h2.text-center.mt-5 Log in
+%h2.text-center.mt-5=t('header.login')
 %hr.border-danger.col-3.my-5.border-top
 .container
   .row.justify-content-center
@@ -19,6 +19,6 @@
             = f.label :remember_me
 
         .form-group.text-center
-          = f.submit "Log in", class: 'btn btn-info btn-lg btn-block'
+          = f.submit t('header.login'), class: 'btn btn-info btn-lg btn-block'
       .text-center.my-3
         = render "users/shared/links"

@@ -1,8 +1,8 @@
 en:
   meta_tags:
     keywords: 'how to check if a degree is real, validate education, background check'
-  main_offer: "Blockchain-based system for education verifications"
-  suboffer: 'Worldwide. Fast. Easy.'
+  main_offer: "Blockchain-based platform for education verifications"
+  suboffer: 'Worldwide. Fast. Easy. The first step to future of education.'
   offer_2: "The first blockchain platform for qualification check"
   header:
     our_services: "Our services"
@@ -10,7 +10,7 @@ en:
     login:  "Sign In "
     signup: "Sign Up"
     for_hr: "For HRs"
-    for_univs: "For educational organization"
+    for_univs: "For education"
   main_btn:
     more: "Learn more"
     check: "Check it now!"
@@ -26,7 +26,7 @@ en:
     step1: "Create an account"
     step2: "Buy coins"
     step3: "Check diplomas"
-    text1: "Sign In and verify your account"
+    text1: "Sign up and verify your account"
     text2: "Buy special coins for verifications - EDC"
     text3: "Fill in the details and sumbit the request"
   footer:
@@ -37,4 +37,6 @@ en:
     terms: "Terms and conditions"
     privacy: "Privacy policy"
     contact: "Contact Us"
-
+  devise:
+    forgot_password: 'Forgot your password?'
+    reset: 'Reset password'

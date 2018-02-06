@@ -7,7 +7,7 @@
           Easy Verify
         %button.navbar-toggler{data: {toggle: 'collapse', target: '#headerNav'}}
           %i.fas.fa-bars.text-white
-        .collapse.navbar-collapse.justify-content-end#headerNav
+        .collapse.navbar-collapse.justify-content-end.text-uppercase#headerNav
           %ul.navbar-nav.text-white
             - unless signed_in?
               %li.nav-item.mx-2.dropdown
@@ -23,7 +23,7 @@
               %li.nav-item.mx-2
                 = link_to t('header.login'), sign_in_path, class: 'nav-link text-white'
               %li.nav-item.mx-2
-                = link_to t('header.signin'), sign_up_path, class: 'nav-link btn btn-danger'
+                = link_to t('header.signup'), sign_up_path, class: 'nav-link btn btn-danger'
             - else
               %li.nav-item.mx-2.dropdown
                 = link_to 'My account', '#', class: 'nav-link text-white dropdown-toggle', data: {toggle: 'dropdown'}

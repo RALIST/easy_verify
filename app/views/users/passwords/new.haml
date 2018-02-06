@@ -1,4 +1,4 @@
-%h2.mt-5.text-center Forgot your password?
+%h2.mt-5.text-center=t('devise.forgot_password')
 %hr.my-5.border-top.border-danger.col-3
 .container
   .row.justify-content-center
@@ -11,6 +11,6 @@
           = f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control'
 
         .form-group
-          = f.submit "Send me reset password instructions", class: 'btn btn-info btn-block btn-lg'
+          = f.submit t('devise.reset'), class: 'btn btn-info btn-block btn-lg'
       .text-center.my-3
         = render "users/shared/links"

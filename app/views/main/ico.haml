@@ -38,22 +38,22 @@
             %iframe.embed-responsive-item{src: "https://www.youtube.com/embed/-XjFpvAC3zo?rel=0&showinfo=0", allowfullscreen: true}
 
   .row#particles
-.container
+.container-fluid#main-menu
   .row
-    .col-12.pt-3#menu
+    .col-12.py-3#menu
       %ul.nav.nav-pills.text-uppercase.w-100.nav-justified
         %li.nav-item
           = link_to 'About', '#about', class: 'nav-link', data: {turbolionks: false}
         %li.nav-item
-          = link_to 'Roadmap', '#', class: 'nav-link'
+          = link_to 'Roadmap', '#roadmap', class: 'nav-link', data: {turbolionks: false}
         %li.nav-item
-          = link_to 'Mission', '#', class: 'nav-link'
+          = link_to 'Mission', '#', class: 'nav-link', data: {turbolionks: false}
         %li.nav-item
-          = link_to 'ICO', '#', class: 'nav-link'
+          = link_to 'ICO', '#', class: 'nav-link', data: {turbolionks: false}
         %li.nav-item
-          = link_to 'Team', '#', class: 'nav-link'
+          = link_to 'Team', '#', class: 'nav-link', data: {turbolionks: false}
         %li.nav-item
-          = link_to 'Join', '#', class: 'nav-link'
+          = link_to 'Join', '#', class: 'nav-link', data: {turbolionks: false}
 %hr
 %section.container.pt-3#about
   %h1.font-oswald.text-uppercase.text-center.mb-5
@@ -76,7 +76,6 @@
         become more competitive with trusted documents of education.
     .col-5.text-center
       %i.fas.fa-graduation-cap.fa-10x
-
 %hr
 %section.container#roadmap
   %h1.font-oswald.text-uppercase.text-center.mb-5

@@ -32,4 +32,16 @@ $(document).on('turbolinks:load', function(){
 });
 
 
-
+$(document).on('turbolinks:load', function(){
+  var top = $('#main-menu').offset().top;
+  $(window).scroll(function(){
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= top){
+      $('#main-menu').addClass('fixed-top bg-gradient-info');
+      $('#main-menu a').addClass('text-white');
+    }else{
+      $('#main-menu').removeClass('fixed-top bg-gradient-info');
+      $('#main-menu a').removeClass('text-white');
+    }
+  })
+})

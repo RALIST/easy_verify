@@ -22,3 +22,53 @@
     font-size: 1rem;
   }
 }
+
+#roadlist {
+  @include make-col-ready();
+  @include make-col(7);
+  @include make-row();
+  min-height: 170px;
+  .fa-layers {
+    width: 90%;
+    color: $info;
+    svg{
+      margin: 0;
+    }
+  }
+  .fa-layers-text {
+    font-size: 2.5rem;
+  }
+  .small {
+    font-size: 1rem;
+  }
+}
+
+#roadlist-inverse {
+  @include make-col-ready();
+  @include make-col(7);
+  @include make-row();
+  @include make-col-offset(5);
+  min-height: 170px;
+  .fa-layers {
+    width: 90%;
+    color: $info;
+    svg{
+      margin: 0;
+    }
+  }
+  .fa-layers-text {
+    font-size: 2.5rem;
+  }
+  .small {
+    font-size: 1rem;
+  }
+
+}
+
+.roadline {
+  width: 1px;
+  position: absolute;
+  top: 2px;
+  left: 49%;
+  height: 90%;
+}

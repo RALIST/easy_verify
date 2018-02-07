@@ -43,7 +43,7 @@
     .col-12.pt-3#menu
       %ul.nav.nav-pills.text-uppercase.w-100.nav-justified
         %li.nav-item
-          = link_to 'About', '#', class: 'nav-link'
+          = link_to 'About', '#about', class: 'nav-link', data: {turbolionks: false}
         %li.nav-item
           = link_to 'Roadmap', '#', class: 'nav-link'
         %li.nav-item
@@ -55,8 +55,115 @@
         %li.nav-item
           = link_to 'Join', '#', class: 'nav-link'
 %hr
-.container.pt-3
-  %h1.font-oswald.text-uppercase.text-center
+%section.container.pt-3#about
+  %h1.font-oswald.text-uppercase.text-center.mb-5
     About Verify
+  .row
+    .col-7
+      Easy verify is blockchain platform for connecting employers, universities and candidates.
+      Our services fit into three groups:
+      %p.mt-3
+        %strong
+          Employers
+        can easy verify qualification before hiring a personnel.
+      %p
+        %strong
+          Universities
+        get trusted and valid documents, that nobody can faked.
+      %p
+        %strong
+          Students and candidates
+        become more competitive with trusted documents of education.
+    .col-5.text-center
+      %i.fas.fa-graduation-cap.fa-10x
 
-
+%hr
+%section.container#roadmap
+  %h1.font-oswald.text-uppercase.text-center.mb-5
+    Roadmap
+  .row
+    .col-12
+      .roadline.border.border-danger
+      #roadlist
+        .col-9
+          .h3.font-oswald.text-uppercase.text-right
+            Make MVP
+          .small.text-right
+            Completed
+          %p.text-right
+            Made an easy and trusted service for qualification check
+        .col-3.text-right
+          %span.fa-layers.fa-fw.fa-7x
+            %i.fas.fa-circle
+            %span.fa-layers-text.fa-inverse
+              NOW
+      #roadlist-inverse
+        .col-3.text-left
+          %span.fa-layers.fa-fw.fa-7x
+            %i.fas.fa-circle
+            %span.fa-layers-text.fa-inverse{data: {fa:{transform: 'up-2'}}}
+              2018
+            %span.fa-layers-text.fa-inverse.small{data: {fa:{transform: 'down-25'}}}
+              march
+        .col-9
+          .h3.font-oswald.text-uppercase.text-left
+            ICO
+          %p.text-left
+            Made an easy and trusted service for qualification check
+      #roadlist
+        .col-9
+          .h3.font-oswald.text-uppercase.text-right
+            Connect more universities
+          .small.text-right
+            Completed
+          %p.text-right
+            Made an easy and trusted service for qualification check
+        .col-3.text-right
+          %span.fa-layers.fa-fw.fa-7x
+            %i.fas.fa-circle
+            %span.fa-layers-text.fa-inverse{data: {fa:{transform: 'up-2'}}}
+              2018
+            %span.fa-layers-text.fa-inverse.small{data: {fa:{transform: 'down-25'}}}
+              summer
+      #roadlist-inverse
+        .col-3.text-left
+          %span.fa-layers.fa-fw.fa-7x
+            %i.fas.fa-circle
+            %span.fa-layers-text.fa-inverse{data: {fa:{transform: 'up-2'}}}
+              2018
+            %span.fa-layers-text.fa-inverse.small{data: {fa:{transform: 'down-25'}}}
+              autumn
+        .col-9
+          .h3.font-oswald.text-uppercase.text-left
+            API development
+          %p.text-left
+            Made an easy and trusted service for qualification check
+      #roadlist
+        .col-9
+          .h3.font-oswald.text-uppercase.text-right
+            Integration with lead HR services
+          .small.text-right
+            Completed
+          %p.text-right
+            Made an easy and trusted service for qualification check
+        .col-3.text-right
+          %span.fa-layers.fa-fw.fa-7x
+            %i.fas.fa-circle
+            %span.fa-layers-text.fa-inverse{data: {fa:{transform: 'up-2'}}}
+              2019
+            %span.fa-layers-text.fa-inverse.small{data: {fa:{transform: 'down-25'}}}
+              begining
+      #roadlist-inverse
+        .col-3.text-left
+          %span.fa-layers.fa-fw.fa-7x
+            %i.fas.fa-circle
+            %span.fa-layers-text.fa-inverse{data: {fa:{transform: 'up-2'}}}
+              25
+            %span.fa-layers-text.fa-inverse.small{data: {fa:{transform: 'down-25'}}}
+              century
+        .col-9
+          .h3.font-oswald.text-uppercase.text-left
+            Blockchain world
+          %p.text-left
+            Made an easy and trusted service for qualification check
+%hr

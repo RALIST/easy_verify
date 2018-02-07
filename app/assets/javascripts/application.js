@@ -38,10 +38,53 @@ $(document).on('turbolinks:load', function(){
     var currentScroll = $(window).scrollTop();
     if (currentScroll >= top){
       $('#main-menu').addClass('fixed-top bg-gradient-info');
+      $('#main-menu .col-12').removeClass('py-3');
       $('#main-menu a').addClass('text-white');
     }else{
       $('#main-menu').removeClass('fixed-top bg-gradient-info');
       $('#main-menu a').removeClass('text-white');
+      $('#main-menu .col-12').addClass('py-3');
     }
   })
 })
+
+
+$(document).on('turbolinks:load', function () {
+    $(document).on("scroll", onScroll);
+
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#main-menu a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#main-menu ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}

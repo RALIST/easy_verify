@@ -1,0 +1,19 @@
+.container-fluid#main-screen
+  #main-wrapper.d-flex.align-items-center.justify-content-center.flex-column
+    .row.text-center.align-items-center.justify-content-center.w-100.mb-5
+      %h1.text-white.text-uppercase.font-oswald.display-3
+        Welcome to the future of education
+    .container
+      .row.w-100
+        .col-6.text-center
+          %em.h2.text-white.font-oswald
+            pre-ICO will start at 15 of March, 2018!
+          .progress.mt-3
+            .progress-bar.progress-bar-striped.progress-bar-animated.font-oswald{style: "width: #{100 - (Date.parse('2018-03-15') - Date.today).to_i}%"}
+              = (Date.parse('2018-03-15') - Date.today).to_i
+              days left
+          .mt-3
+            = link_to 'Notify me', '#', class: 'btn btn-danger btn-lg'
+        .col-6
+  .row#particles
+

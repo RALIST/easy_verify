@@ -12,7 +12,7 @@
 		%meta{name: "viewport", content: "width=device-width, initial-scale=1"}
 	%body
 		#wrapper
-			= render 'layouts/header'
+			= render 'layouts/header' unless @disable_header
 			= yield
 		= render 'layouts/footer'
 

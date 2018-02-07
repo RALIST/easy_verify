@@ -16,6 +16,8 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+//= require particles.min
+//= require particles
 //= require_tree .
 
 
@@ -28,5 +30,6 @@ $(document).on('turbolinks:load', function(){
     menuWidth: '18em'
   });
 });
+
 
 

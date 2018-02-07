@@ -16,6 +16,7 @@ class MainController < ApplicationController
   end
 
   def ico
+    @disable_header = true
   end
 
   def faq

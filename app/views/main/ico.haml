@@ -12,8 +12,51 @@
             .progress-bar.progress-bar-striped.progress-bar-animated.font-oswald{style: "width: #{100 - (Date.parse('2018-03-15') - Date.today).to_i}%"}
               = (Date.parse('2018-03-15') - Date.today).to_i
               days left
-          .mt-3
-            = link_to 'Notify me', '#', class: 'btn btn-danger btn-lg'
+          .btn-group.mt-3.w-100
+            = link_to 'White Paper', '#', class: 'btn btn-info btn-block'
+            = link_to 'Check Beta', root_path, class: 'btn btn-info'
+            = link_to 'Chat', '#', class: 'btn btn-info'
+            = link_to 'Notify me', '#', class: 'btn btn-danger'
+          %ul#social.nav.w-100.nav-justified.mt-3
+            %li.nav-item
+              = link_to '', class: 'text-white nav-link' do
+                %i.fab.fa-facebook.fa-2x
+            %li.nav-item
+              = link_to '', class: 'text-white nav-link' do
+                %i.fab.fa-vk.fa-2x
+            %li.nav-item
+              = link_to '', class: 'text-white nav-link' do
+                %i.fab.fa-twitter.fa-2x
+            %li.nav-item
+              = link_to '', class: 'text-white nav-link' do
+                %i.fab.fa-telegram-plane.fa-2x
+            %li.nav-item
+              = link_to '', class: 'text-white nav-link' do
+                %i.fab.fa-github.fa-2x
         .col-6
+          .embed-responsive.embed-responsive-16by9
+            %iframe.embed-responsive-item{src: "https://www.youtube.com/embed/-XjFpvAC3zo?rel=0&showinfo=0", allowfullscreen: true}
+
   .row#particles
+.container
+  .row
+    .col-12.pt-3#menu
+      %ul.nav.nav-pills.text-uppercase.w-100.nav-justified
+        %li.nav-item
+          = link_to 'About', '#', class: 'nav-link'
+        %li.nav-item
+          = link_to 'Roadmap', '#', class: 'nav-link'
+        %li.nav-item
+          = link_to 'Mission', '#', class: 'nav-link'
+        %li.nav-item
+          = link_to 'ICO', '#', class: 'nav-link'
+        %li.nav-item
+          = link_to 'Team', '#', class: 'nav-link'
+        %li.nav-item
+          = link_to 'Join', '#', class: 'nav-link'
+%hr
+.container.pt-3
+  %h1.font-oswald.text-uppercase.text-center
+    About Verify
+
 
